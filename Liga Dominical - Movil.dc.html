@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/modernist-e7b28f71-dbc7-4cc1-9ad1-333d3e00588d/styles.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&display=swap">
+<style>
+  html, body { margin:0; padding:0; background:#f3f2f2; }
+  * { box-sizing:border-box; }
+  a { color:#ae1800; text-decoration:none; }
+  a:hover { color:#ec3013; text-decoration:underline; }
+</style>
+</helmet>
+
+<div style="font-family:var(--font-body); color:var(--color-text); background:var(--color-bg); min-height:100vh; padding:28px 20px 60px">
+  <div style="max-width:1000px">
+    <div style="font-size:10px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:var(--color-neutral-700)">Liga Dominical · vista de cancha</div>
+    <h1 style="margin:6px 0 0; font-size:30px; font-weight:800; letter-spacing:-0.03em">El sistema en un celular</h1>
+    <p style="font-size:14px; color:var(--color-neutral-700); max-width:60ch; margin:10px 0 0; text-wrap:pretty">El mismo panel, sin barra lateral: el menú pasa arriba y las tablas anchas se desplazan a lo ancho. Es la pantalla que usa el delegado el domingo en la cancha. Toca dentro del teléfono para navegarlo.</p>
+    <div style="border-bottom:2px solid var(--color-text); margin:18px 0 26px"></div>
+
+    <div style="display:flex; gap:40px; flex-wrap:wrap; align-items:flex-start">
+      <div style="flex:0 0 auto">
+        <x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" hint-size="393px,852px">
+          <div style="height:100%; padding-top:62px; background:var(--color-bg)"><iframe src="./Liga Dominical - Panel.dc.html" title="Panel del organizador en móvil" style="width:100%; height:100%; border:0; display:block; background:var(--color-bg)"></iframe></div>
+        </x-import>
+      </div>
+
+      <div style="flex:1 1 240px; min-width:240px; max-width:420px">
+        <h2 style="margin:0; font-size:13px; font-weight:800; letter-spacing:0.1em; text-transform:uppercase; border-bottom:2px solid var(--color-text); padding-bottom:8px">Qué cambia en pantalla chica</h2>
+        <div style="padding:13px 0; border-bottom:1px solid var(--color-neutral-300)">
+          <div style="font-size:14px; font-weight:600">El menú sube</div>
+          <div style="font-size:13px; color:var(--color-neutral-700)">Debajo de 760 px la barra lateral desaparece y las ocho secciones quedan en una tira horizontal con sus iconos.</div>
+        </div>
+        <div style="padding:13px 0; border-bottom:1px solid var(--color-neutral-300)">
+          <div style="font-size:14px; font-weight:600">Las tablas se desplazan, no se rompen</div>
+          <div style="font-size:13px; color:var(--color-neutral-700)">Posiciones, fixture y pagos mantienen sus columnas y se arrastran a lo ancho: los números siguen alineados.</div>
+        </div>
+        <div style="padding:13px 0; border-bottom:1px solid var(--color-neutral-300)">
+          <div style="font-size:14px; font-weight:600">La planilla queda en una columna</div>
+          <div style="font-size:13px; color:var(--color-neutral-700)">Los dos equipos se apilan y los botones de gol y tarjeta suben a 44 px de alto, el mínimo para el dedo.</div>
+        </div>
+        <div style="padding:13px 0">
+          <div style="font-size:14px; font-weight:600">Lo que falta para cancha real</div>
+          <div style="font-size:13px; color:var(--color-neutral-700)">Funcionar sin señal y sincronizar al volver la cobertura. Es la única pieza del prototipo que no se puede simular en el navegador.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</x-dc>
+</body>
+</html>
